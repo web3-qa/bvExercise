@@ -5,9 +5,9 @@ import java.util.List;
 
 public interface DocumentSearch {
 
-    public void setSchema(Schema schema);
+    void setSchema(Schema schema);
 
-    public void storeDocument(Document document);
+    void storeDocument(Document document);
 
     /*eg search("description", "day") should return below document
 
@@ -20,6 +20,6 @@ public interface DocumentSearch {
     *  }
     */
 
-    public List<Document> search(String field, Object value);
+    List<Document> search(String field, Object value);
 
 }
